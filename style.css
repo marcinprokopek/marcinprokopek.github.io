@@ -288,7 +288,7 @@ body main .about .me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 body main .about .picture {
@@ -326,6 +326,11 @@ body main .projects .des {
   display: none;
 }
 
+body main .projects .des img {
+  width: 300px;
+  height: 450px;
+}
+
 body main .projects .mes {
   display: none;
 }
@@ -347,6 +352,7 @@ body main .projects .what {
   display: block;
   border: 4px solid white;
   padding: 4%;
+  cursor: pointer;
 }
 
 body main .projects .what:hover {
@@ -363,5 +369,56 @@ body main .projects .music:hover {
 
 body main .projects .webdesing:hover {
   background-color: #302e8b;
+}
+
+body main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+body main .contact .marek {
+  display: block;
+  cursor: pointer;
+}
+
+body main .contact .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .contact .socials .soc {
+  display: block;
+  display: none;
+}
+
+body main .contact .socials .soc .demo {
+  color: black;
+  font-size: 100px;
+}
+
+body main .contact .socials .soc:hover .A {
+  color: cadetblue;
+}
+
+body main .contact .socials .soc:hover .B {
+  color: #c2653a;
+}
+
+body footer {
+  background-color: #111111;
+  color: white;
+  margin-bottom: 0;
+  font-size: 1.4em;
 }
 /*# sourceMappingURL=style.css.map */
