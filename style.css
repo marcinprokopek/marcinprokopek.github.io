@@ -29,6 +29,13 @@ body header {
   color: white;
 }
 
+body header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111111;
+}
+
 body header .carusel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,11 +239,11 @@ body main {
 }
 
 body main .tools {
-  height: 60vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 40px;
+  font-size: 50px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -247,7 +254,7 @@ body main .tools {
 }
 
 body main .tools .icon {
-  font-size: 80px;
+  font-size: 100px;
 }
 
 body main .tools .tec {
@@ -256,7 +263,7 @@ body main .tools .tec {
 
 body main .tools .tec:hover .icon {
   color: red;
-  font-size: 100px;
+  font-size: 120px;
   margin: 0;
 }
 
@@ -264,10 +271,97 @@ body main .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
 }
 
 body main .about .me {
   width: 50%;
   padding: 2%;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+}
+
+body main .about .picture {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  background-size: contain;
+}
+
+body main .projects {
+  background-color: #111111;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .projects .des {
+  display: none;
+}
+
+body main .projects .mes {
+  display: none;
+}
+
+body main .projects .mes img {
+  width: 500px;
+  height: 400px;
+}
+
+body main .projects .bes {
+  display: none;
+}
+
+body main .projects .dicon {
+  font-size: 150px;
+}
+
+body main .projects .what {
+  display: block;
+  border: 4px solid white;
+  padding: 4%;
+}
+
+body main .projects .what:hover {
+  background-color: rgba(128, 0, 128, 0.801);
+}
+
+body main .projects .what:hover .dicon {
+  font-size: 170px;
+}
+
+body main .projects .music:hover {
+  background-color: seagreen;
+}
+
+body main .projects .webdesing:hover {
+  background-color: #302e8b;
 }
 /*# sourceMappingURL=style.css.map */
