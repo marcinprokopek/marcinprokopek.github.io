@@ -1,3 +1,3 @@
 # marcinprokopek.github.io
 #this is my portfolio
-#[click me](marcinprokopek.github.io/)
+#[click me](https://marcinprokopek.github.io/)
