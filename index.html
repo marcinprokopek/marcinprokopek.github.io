@@ -4,11 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1>hello</h1>
-    <h1>marki tego swiata</h1>
+    <header>
+        <div class="incase">
+            <div class="logo"><h1>MrPr</h1></div>
+                
+                <div class="menu">
+                   
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">tools</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">about</a></li>
+                    </ul>
 
+                </div>
+        </div>
+        <div class="maki">
+            <div class="carusel">
+            
+            
+            <div class="mySlides fade">
+                
+                    <h1>MrPr is ucking amazin</h1>
+                    
+                    <div class="start"><button >learn more</button></div>
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+                
+                    <h1>MrPr is your liffe</h1>
+                <div class="text">Caption Two</div>
+            </div>
+            <div class="mySlides fade">
+                
+                    <h1>I lick MrPr at night</h1>
+                <div class="text">Caption three</div>
+            </div>
+            <div class="see">
+            <div class="for">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </div>    
+                
+            <div class="back">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+            </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+
+        </div>
+        
+    </header>
+    <main>
+        <section>
+            <div class="test"><h1>testowe</h1></div>
+        </section>
+    </main>
+
+
+    
+    
+    
+    
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>    
     
 </body>
 </html>

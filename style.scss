@@ -1,0 +1,205 @@
+body
+{
+    margin: 0;
+    header
+    {   
+        .carusel
+        {
+            display: flex;
+            flex-direction: column;
+
+            .see
+            {
+                display: flex;
+
+                .for
+                {
+                    width: 50%;
+                }
+                .back
+                {
+                    width: 50%;
+                }
+                margin-bottom: 5%;
+            }
+        }
+        .prev, .next
+         {
+            cursor: pointer;
+            
+            
+            width: 100%;
+            
+            
+            color: white;
+            
+            font-size: 38px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+        .prev:hover, .next:hover 
+        {
+            background-color: rgba(0,0,0,0.8);
+            
+        } 
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          
+          
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          .active, .dot:hover {
+            background-color: #717171;
+          }
+
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+
+          
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+                    
+          
+        box-sizing: border-box;
+        position: relative;
+        
+        .mySlides 
+        {
+            display: none;
+            margin-bottom: 10%;
+        }
+        img {vertical-align: middle;}
+        
+        display: flex;
+        
+       
+        background-image: url("img/Photo-1.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        h1
+        { color: white;}
+        height: 100vh;
+
+        .maki
+        {
+            height: 100%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+            h1
+            {
+                font-size: 4em;
+            }
+
+            .start
+            {
+                button
+                {
+                    background-color: Transparent;
+                    background-repeat:no-repeat;
+                    border: 2px solid white;
+                    cursor:pointer;
+                    overflow: hidden;
+                    outline:none;
+                    color: white;
+                    border-radius: 30px;
+                    height: 40px;
+                    width: 200px;
+                    font-size: 1.2em;
+                }
+            }
+
+        }
+        
+        display: flex;
+        flex-direction: column;
+        
+        background-image: url("img/tło.png");
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+        color: white;
+
+        .menu
+        {
+            display: flex;
+            color: white;
+            justify-content: center;
+            width: 100%;
+
+            ul
+            {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-evenly;
+                justify-content: center;
+                li
+                {
+                    flex: 1;
+                    width: 200px;
+                    font-size: 1.5em;
+
+                    a
+                    {
+                        color: white;
+                        text-decoration: none;
+                        display: block;
+                        text-align: center;
+                        
+                    }
+
+                    a:hover
+                    {
+                        border: 2px solid white;
+                        border-radius: 5px;
+                        width: 250px;
+                    }
+                }
+            }
+
+        }
+    }
+}
