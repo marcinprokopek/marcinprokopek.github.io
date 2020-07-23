@@ -421,4 +421,58 @@ body footer {
   margin-bottom: 0;
   font-size: 1.4em;
 }
+
+@media only screen and (max-width: 1000px) {
+  body header .mySlides h1 {
+    font-size: 1em;
+  }
+  body header .sticky {
+    display: none;
+  }
+  body main .tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 1.2em;
+  }
+  body main .tools .icon {
+    font-size: 1em;
+  }
+  body main .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .about .me {
+    width: 100%;
+  }
+  body main .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .projects .what {
+    height: 20%;
+    width: 80%;
+    font-size: 0.6em;
+  }
+  body main .projects .what .dicon {
+    font-size: 2em;
+  }
+}
 /*# sourceMappingURL=style.css.map */

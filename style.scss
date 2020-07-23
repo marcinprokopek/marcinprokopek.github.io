@@ -1,8 +1,11 @@
 body
 {
+
+    
     margin: 0;
     header
     {   
+        
         .sticky {
             position: fixed;
             top: 0;
@@ -409,4 +412,70 @@ body
         
         font-size: 1.4em;
     }
+
+    @media only screen and (max-width: 1000px) {
+         
+            header
+            {
+                .mySlides{
+                h1
+                {
+                    font-size: 1em;
+                }
+            }
+                .sticky
+                {
+                    display: none;
+                }
+            }
+          main{ 
+
+            .tools
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                font-size: 1.2em;
+
+                .icon
+                {
+                    font-size: 1em;
+                }
+            }
+            .about
+            {   
+                display: flex;
+                flex-direction: column;
+                .me
+                {
+                    width: 100%;
+                }
+            }
+              .projects
+              {
+                  display: flex;
+                  flex-direction: column;
+                  .what
+                  {
+                      height: 20%;
+                      width: 80%;
+                      font-size: 0.6em;
+
+                      .dicon
+                      {
+                          font-size: 2em;
+                      }
+                      
+                  }
+                  
+              }
+
+          }
+        
+    }
+    
+
+
+    
 }
+
