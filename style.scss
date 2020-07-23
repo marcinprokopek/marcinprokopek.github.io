@@ -202,4 +202,52 @@ body
 
         }
     }
+
+    main
+    {
+        display: flex;
+        flex-direction: column;
+
+        .tools
+        {
+            height: 60vh;
+            display: flex;
+            font-size: 40px;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+
+            .icon
+            {
+                font-size: 80px;
+                
+            }
+
+            .tec
+            {
+                display: block;
+            }
+
+            .tec:hover
+            {   
+                
+                .icon
+                {
+                    color: red;
+                    font-size: 100px;
+                    margin: 0;
+                }
+            }
+        }
+        .about
+        {
+            display: flex;
+
+            .me
+            {
+                width: 50%;
+                padding: 2%;
+            }
+        }
+    }
 }

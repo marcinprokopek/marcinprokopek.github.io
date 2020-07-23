@@ -220,4 +220,54 @@ body header .menu ul li a:hover {
   border-radius: 5px;
   width: 250px;
 }
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .tools {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main .tools .icon {
+  font-size: 80px;
+}
+
+body main .tools .tec {
+  display: block;
+}
+
+body main .tools .tec:hover .icon {
+  color: red;
+  font-size: 100px;
+  margin: 0;
+}
+
+body main .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .about .me {
+  width: 50%;
+  padding: 2%;
+}
 /*# sourceMappingURL=style.css.map */
