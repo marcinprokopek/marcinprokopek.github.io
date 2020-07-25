@@ -271,15 +271,10 @@ body main .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-}
-
-body main .about .me {
-  width: 50%;
-  padding: 2%;
-  text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 50vh;
+  margin-top: 4%;
+  width: 100%;
+  text-align: center;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -291,18 +286,20 @@ body main .about .me {
   font-size: 1.5em;
 }
 
-body main .about .picture {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  background-size: contain;
+body main .about h1 {
+  font-size: 2em;
+  color: #717171;
+}
+
+body main .about .navbut button {
+  width: 200px;
+  height: 70px;
+  background-color: red;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  margin-top: 4%;
 }
 
 body main .projects {
@@ -433,17 +430,18 @@ body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 30vh;
     font-size: 1.2em;
   }
+  body main .tools .tec {
+    width: 50%;
+  }
   body main .tools .icon {
-    font-size: 1em;
+    font-size: 2em;
   }
   body main .about {
     display: -webkit-box;
@@ -453,6 +451,8 @@ body footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 1%;
+    font-size: 1.5em;
   }
   body main .about .me {
     width: 100%;

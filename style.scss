@@ -251,41 +251,44 @@ body
         .about
         {
             display: flex;
+            height: 50vh;
+            margin-top: 4%;
+            h1
+            {
+                font-size: 2em;
+                color: #717171;
+            }
+            .navbut
+            {
+                button
+                {
+                    width: 200px;
+                    height: 70px;
+                    background-color: red;
+                    color: white;
+                    font-size: 1em;
+                    border: none;
+                    border-radius: 20px;
+                    margin-top: 4%;
+
+                }
+            }
             
-            height: 100vh;
             
 
-            .me
-            {
-                width: 50%;
-                padding: 2%;
-                text-align: justify;
+            
+            
+                width: 100%;
+                
+                text-align: center;
                 display: flex;
                 flex-direction: column;
                 
                 justify-content: center;
                 font-size: 1.5em;
-            }
+            
 
-            .picture
-            {
-               
-               
-              
-               width: 50%;
-               display: flex;
-               justify-content: center;
-
-               align-items: right;
-               
-               background-size: contain;
-
-               
-               
-
-               
-
-            }
+           
         }
         .projects
         {
@@ -433,19 +436,28 @@ body
             .tools
             {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
+                width: 100%;
+                justify-content: flex-start;
+                height: 30vh;
+                
+                
                 font-size: 1.2em;
+                .tec
+                {
+                    width: 50%;
+                }
 
                 .icon
                 {
-                    font-size: 1em;
+                    font-size: 2em;
                 }
             }
             .about
             {   
                 display: flex;
                 flex-direction: column;
+                height: 1%;
+                font-size: 1.5em;
                 .me
                 {
                     width: 100%;
