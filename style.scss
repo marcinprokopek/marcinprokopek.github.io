@@ -11,6 +11,7 @@ body
             top: 0;
             width: 100%;
             background-color: #111111;
+            z-index: 10;
           }
         .carusel
         {
@@ -224,8 +225,14 @@ body
             flex-direction: column;
             font-size: 30px;
             justify-content: space-evenly;
+            
            
             text-align: center;
+
+            p
+            {
+                color: rgb(93, 160, 177);
+            }
            
            
             .graphs
@@ -234,25 +241,27 @@ body
                 justify-content: space-evenly;
             }
 
-            .icon
-            {
-                font-size: 80px;
-                
-            }
+            
 
             .tec
             {
                 display: block;
+                img
+                {
+                    height: 100px;
+                    width: 200px;
+                    opacity: 0.8;
+                }
             }
 
             .tec:hover
             {   
                 
-                .icon
+                img
                 {
-                    color: red;
-                    font-size: 100px;
-                    margin: 0;
+                    
+                    height: 120px;
+                    opacity: 1;
                 }
             }
         }
@@ -261,7 +270,8 @@ body
         {
             display: flex;
             width: 100%;
-            height: 50vh;
+            height: 60vh;
+            background-color: rgb(240, 236, 236);
 
             .left
             {
@@ -274,32 +284,53 @@ body
                 {
                     img
                     {
-                        height: 195px;
-                        width: 195px;
+                        height: 170px;
+                        width: 140px;
                     }
                 }
                 .ai
                 {
                     img
                     {
-                        height: 165px;
-                        width: 165px;
+                        height: 140px;
+                        width: 110px;
                     }
                 }
                 img
                 {
-                    height: 150px;
-                    width: 150px;
+                    height: 125px;
+                    width: 95px;
                 }
             }
             .right
             {
                 display: flex;
                 width: 50%;
+                flex-direction: column;
                 h2
                 {
-                    font-size: 3em;
+                    font-size: 2.5em;
                     color: grey;
+                    text-align: center;
+                }
+                .pr
+                img
+                {
+                    height: 120px;
+                    width: 120px;
+                }
+                .an
+                img
+                {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                .need
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 
                 
@@ -308,8 +339,13 @@ body
         .about
         {
             display: flex;
-            height: 50vh;
-            margin-top: 4%;
+            height: 30vh;
+            margin-top: 2%;
+            img
+            {
+                height: 100px;
+                width: 100px;
+            }
             h1
             {
                 font-size: 2em;
@@ -414,52 +450,50 @@ body
                 background-color: rgb(48, 46, 139);
             }
         }
+        .happy
+        {
+            display: flex;
+            .hleft
+            {
+                width: 50%;
+            }
+        }
         .contact
         {
             display: flex;
             flex-direction: column;
-            text-align: center;
-            font-size: 1.5em;
+            justify-content: center;
             .marek
             {
-                display: block;
-                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                h1
+                {
+                    color: gray;
+                    font-size: 2em;
+                }
+               
             }
             .socials
             {
                 
                 display: flex;
                 justify-content: space-evenly;
+                align-items: center;
+                height:60vh;
+
+                img
+                {
+                    height: 100px;
+                    width: 100px;
+                }
+                 
                 
                 
+
                
-                
-                
-
-                .soc
-                {   
-                    
-                    display: block;
-                    display: none;  
-                    
-                    
-
-                    .demo
-                    {
-                        color: black;
-                        font-size: 100px;
-                    }
-
-                }
-                .soc:hover
-                {   
-                    .A{
-                    color: cadetblue;
-                    }
-                    .B{
-                        color: rgb(194, 101, 58);
-                        }
-                }
                   
             }
         }
@@ -469,6 +503,7 @@ body
         background-color: #111111;
         color: white;
         margin-bottom: 0;
+        padding: 1%;
         
         font-size: 1.4em;
     }
@@ -540,19 +575,54 @@ body
                 display: flex;
                 width: 100%;
                 justify-content: flex-start;
-                height: 30vh;
+                height: 1%!important;
                 
                 
-                font-size: 1.2em;
-                .tec
+                
+                font-size: 0.8em;
+                h1{font-size: 1em;}
+
+                img
                 {
-                    width: 50%;
+                    width: 40px!important;
+                    height: 40px!important;
+                }
+               
+
+                
+            }
+            .use
+            {
+                font-size: 0.5em;
+                flex-direction: column;
+                height: 1%;
+                
+                img
+                {
+                    height: 100px!important;
+                    width: 100%!important;
+                }
+                .left
+                {
+                    width: 100%!important;
+                    h2{font-size: 1.5em;}
+                    
                 }
 
-                .icon
+                .b
                 {
-                    font-size: 2em;
+                    width: 100%!important;
+                    .icons
+                    {margin:0;
+                    padding: 0;}
+                    h2{font-size: 1.5em;}
+                    img
+                    {
+                        height: 90px!important;
+                        width: 90px!important;
+                    }
                 }
+
             }
             .about
             {   
@@ -579,11 +649,14 @@ body
               {
                   display: flex;
                   flex-direction: column;
+                  height: 1%!important;
+                  margin-top: 2%;
+                  padding: 2%;
                   .what
                   {
-                      height: 20%;
-                      width: 80%;
-                      font-size: 0.6em;
+                      
+                      width: 60%;
+                      font-size: 0.4em;
 
                       .dicon
                       {
@@ -596,6 +669,11 @@ body
               .contact
               {
                   font-size: 0.5em;
+                  img
+                  {
+                      width: 50px!important;
+                      height: 50px!important;
+                  }
               }
               
 
