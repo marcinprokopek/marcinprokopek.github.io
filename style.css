@@ -243,18 +243,28 @@ body main .tools {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 30px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 
+body main .tools .graphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 body main .tools .icon {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 body main .tools .tec {
@@ -263,8 +273,56 @@ body main .tools .tec {
 
 body main .tools .tec:hover .icon {
   color: red;
-  font-size: 120px;
+  font-size: 100px;
   margin: 0;
+}
+
+body main .use {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+
+body main .use .left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .use .left .xd img {
+  height: 195px;
+  width: 195px;
+}
+
+body main .use .left .ai img {
+  height: 165px;
+  width: 165px;
+}
+
+body main .use .left img {
+  height: 150px;
+  width: 150px;
+}
+
+body main .use .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+body main .use .right h2 {
+  font-size: 3em;
+  color: grey;
 }
 
 body main .about {
@@ -292,8 +350,8 @@ body main .about h1 {
 }
 
 body main .about .navbut button {
-  width: 200px;
-  height: 70px;
+  width: 150px;
+  height: 55px;
   background-color: red;
   color: white;
   font-size: 1em;
@@ -419,7 +477,66 @@ body footer {
   font-size: 1.4em;
 }
 
-@media only screen and (max-width: 1000px) {
+body .toTop-arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #5c5b5b;
+  cursor: pointer;
+  opacity: 0;
+}
+
+body .toTop-arrow {
+  bottom: 20px;
+  opacity: .6;
+}
+
+body .toTop-arrow:after, body .toTop-arrow:before {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 3px;
+  border-radius: 3px;
+  background: #ffffff;
+  content: "";
+}
+
+body .toTop-arrow:before {
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+  left: 10px;
+}
+
+body .toTop-arrow:after {
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  right: 10px;
+}
+
+body .collections-visible .toTop-arrow {
+  right: 336px;
+}
+
+body .notouch .toTop-arrow:hover {
+  opacity: 1;
+}
+
+body .notouch .toTop-arrow:hover:after, body .notouch .toTop-arrow:hover:before {
+  background: #0e2a47;
+}
+
+body svg {
+  pointer-events: auto;
+}
+
+@media only screen and (max-width: 600px) {
   body header .mySlides h1 {
     font-size: 1em;
   }
@@ -453,11 +570,13 @@ body footer {
             flex-direction: column;
     height: 1%;
     font-size: 1.5em;
-  }
-  body main .about .me {
     width: 100%;
     font-size: 0.5em;
     padding: 0;
+  }
+  body main .about .navbut button {
+    height: 30px;
+    width: 100px;
   }
   body main .projects {
     display: -webkit-box;
