@@ -385,6 +385,10 @@ body
         }
         .projects
         {
+            h1
+            {
+                font-size: 0.5em;
+            }
 
             .des
             {
@@ -409,6 +413,7 @@ body
                 display: none;
             }
 
+
             background-color: #111111;
             height: 100vh;
             color:white;
@@ -420,7 +425,7 @@ body
 
             .dicon
             {
-                font-size: 150px;
+                font-size: 120px;
             }
 
             .what
@@ -436,7 +441,7 @@ body
                 background-color: rgba(128, 0, 128, 0.801);
                 .dicon
                 {
-                    font-size: 170px;
+                    font-size: 130px;
                 }
             }
 
@@ -456,6 +461,16 @@ body
             .hleft
             {
                 width: 50%;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hright
+            {
+                width: 50%;
+                align-items: center;
+                justify-content: center;
             }
         }
         .contact
@@ -482,7 +497,14 @@ body
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                height:60vh;
+                background-color: #111111;
+
+                .soc
+                {
+                    
+                    background-color: white;
+                }
+                
 
                 img
                 {
@@ -567,6 +589,18 @@ body
                 {
                     display: none;
                 }
+                .maki
+                {
+                    .start
+                    {
+                        button
+                        {height: 20px;
+                        width: 50px;
+                            border-radius: 5px;
+                            font-size: 0.2em;
+                    }
+                    }
+                }
             }
           main{ 
 
@@ -645,7 +679,7 @@ body
                 }
                 
             }
-              .projects
+            .projects
               {
                   display: flex;
                   flex-direction: column;
@@ -666,7 +700,29 @@ body
                   }
                   
               }
-              .contact
+            .happy
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .hleft
+                {
+                    width: 100%!important;
+                }
+                .hright
+                {
+                    width: 100%!important;
+                }
+                img
+                {
+                    width: 200px;
+                    height: 200px;
+
+                }
+            }
+
+            .contact
               {
                   font-size: 0.5em;
                   img

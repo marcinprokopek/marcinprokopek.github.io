@@ -418,6 +418,10 @@ body main .projects {
           align-items: center;
 }
 
+body main .projects h1 {
+  font-size: 0.5em;
+}
+
 body main .projects .des {
   display: none;
 }
@@ -441,7 +445,7 @@ body main .projects .bes {
 }
 
 body main .projects .dicon {
-  font-size: 150px;
+  font-size: 120px;
 }
 
 body main .projects .what {
@@ -456,7 +460,7 @@ body main .projects .what:hover {
 }
 
 body main .projects .what:hover .dicon {
-  font-size: 170px;
+  font-size: 130px;
 }
 
 body main .projects .music:hover {
@@ -475,6 +479,23 @@ body main .happy {
 
 body main .happy .hleft {
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .happy .hright {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main .contact {
@@ -518,7 +539,11 @@ body main .contact .socials {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
+  background-color: #111111;
+}
+
+body main .contact .socials .soc {
+  background-color: white;
 }
 
 body main .contact .socials img {
@@ -599,6 +624,12 @@ body svg {
   }
   body header .sticky {
     display: none;
+  }
+  body header .maki .start button {
+    height: 20px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 0.2em;
   }
   body main .tools {
     display: -webkit-box;
@@ -686,6 +717,31 @@ body svg {
   }
   body main .projects .what .dicon {
     font-size: 2em;
+  }
+  body main .happy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .happy .hleft {
+    width: 100% !important;
+  }
+  body main .happy .hright {
+    width: 100% !important;
+  }
+  body main .happy img {
+    width: 200px;
+    height: 200px;
   }
   body main .contact {
     font-size: 0.5em;
