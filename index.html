@@ -19,6 +19,7 @@
           $(".art").click(function(){
             $(".music, .webdesing").toggle(1000);
             $(".des").toggle(1000);
+            $(".sticky").css('background-color','purple');
 
             
           });
@@ -28,20 +29,53 @@
             $(".music").click(function(){
               $(".art, .webdesing").toggle(1000);
               $(".mes").toggle(1000);
+              $(".sticky").css('background-color','seagreen',"slow");
   
               
             });
+            
             
           });
           $(document).ready(function(){
             $(".webdesing").click(function(){
               $(".music, .art").toggle(1000);
               $(".bes").toggle(2000);
+              $(".sticky").css('background-color','rgb(48, 46, 139)');
   
               
             });
             
           });
+          $(document).ready(function(){
+            $(".webdesing").mouseover(function(){
+              
+              $(".sticky").css('background-color','rgb(48, 46, 139)');
+  
+              
+            });
+            
+          });
+
+          $(document).ready(function(){
+            $(".art").mouseover(function(){
+              
+              $(".sticky").css('background-color','purple');
+  
+              
+            });
+            
+          });
+          $(document).ready(function(){
+            $(".music").hover(function(){
+              
+              $(".sticky").css('background-color','seagreen');
+              $("h3").show("slow")
+  
+              
+            });
+            
+          });
+         
         </script>
         <meta name="google-site-verification" content="p1V384i8bkb4yPaxXo-MwMTQk_KSyKcr2GM8bsCaCEc" />
 </head>
@@ -166,12 +200,14 @@
         </section>
         <section class="use">
             <div class="left">
+                <div class="shadow">
                 <div class="right">
                 <div><h2>I m familliar with those</h2></div>
                 <div class="need">
                     <div class="icons xd"><img src="icons/003-adobe.svg"></div>
                     <div class="icons ai"><img src="icons/002-ai.svg"></div>
                     <div class="icons ps"><img src="icons/001-photoshop.svg"></div>
+                </div>
                 </div>
             </div>
             
@@ -184,10 +220,12 @@
         <section class="use">
             <div class="left b"></div>
             <div class="right b">
+                <div class="shadow">
                 <h2>I m not scared of them</h2>
                 <div class="need">
                     <div class="icons pr"><img src="/icons/004-premier.svg"></div>
                     <div class="icons an"><img src="/icons/005-format.svg"></div>
+                </div>
                 </div>
             </div>
         </section>
@@ -201,7 +239,7 @@
                 <p>music is my life. See me playin</p>
                 <img src="img/plyin.jpg"/>
             </div>
-            <div class="what music"><i class="dicon icon-pencil-neg"></i><p>art</p></div>
+            <div class="what music"><i class="dicon icon-pencil-neg"></i><p>art</p><h3>click me</h3></div>
             <div class="mes">
                 <p>art imporant to. drawing like this</p>
                 <img src="img/drow.png"/>
