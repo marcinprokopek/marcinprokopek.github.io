@@ -5,13 +5,34 @@ body
     margin: 0;
     header
     {   
-        
+        .stickyresponsive
+        {
+            
+            
+            background-color: brown;
+            .icon
+            {
+                display: none;
+                color: white;
+                text-decoration: none;
+                font-size: 2em;
+            }
+        }
         .sticky {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: #111111;
+            background-color: purple;
             z-index: 10;
+            overflow: hidden;
+            display: flex;
+            .icon
+            {
+                display: none;
+                color: white;
+                text-decoration: none;
+                font-size: 2em;
+            }
           }
         .carusel
         {
@@ -175,6 +196,7 @@ body
 
         .menu
         {
+           
             display: flex;
             color: white;
             justify-content: center;
@@ -414,7 +436,7 @@ body
             }
 
 
-            background-color: #111111;
+            background-color: #242323;
             height: 100vh;
             color:white;
             text-align: center;
@@ -471,6 +493,8 @@ body
                 width: 50%;
                 align-items: center;
                 justify-content: center;
+                img{height:200px;
+                width:200px;}
             }
         }
         .contact
@@ -499,18 +523,9 @@ body
                 align-items: center;
                 background-color: #111111;
 
-                .soc
-                {
-                    
-                    background-color: white;
-                }
                 
 
-                img
-                {
-                    height: 100px;
-                    width: 100px;
-                }
+                
                  
                 
                 
@@ -575,7 +590,7 @@ body
 
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1500px) {
          
             header
             {
@@ -587,8 +602,54 @@ body
             }
                 .sticky
                 {
-                    display: none;
+                    .menu ul
+                    {
+                        display: none;
+                    }
+                    
+                    h1
+                    {
+                        text-align: left;
+                    }
+                    .icon
+                    {
+                        display: block;
+                        right:0;
+                        top:0;
+
+
+                    }
+                
                 }
+                
+                .stickyresponsive
+                {
+                    
+                    
+                        background-color: brown;
+                    
+                    
+                    .icon
+                    {
+                        display: block;
+                        right:0;
+                        top:0;
+                        color: white;
+                        font-size: 2em;
+                    }
+                    .menu 
+                    {
+                        float: none;
+                        display: block;
+                        ul
+                        {
+                            display: block;
+                        }
+
+                    }
+                }
+                    
+                
                 .maki
                 {
                     .start

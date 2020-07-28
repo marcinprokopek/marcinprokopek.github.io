@@ -29,12 +29,34 @@ body header {
   color: white;
 }
 
+body header .stickyresponsive {
+  background-color: brown;
+}
+
+body header .stickyresponsive .icon {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
 body header .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #111111;
+  background-color: purple;
   z-index: 10;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .sticky .icon {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 body header .carusel {
@@ -402,7 +424,7 @@ body main .about .navbut button {
 }
 
 body main .projects {
-  background-color: #111111;
+  background-color: #242323;
   height: 100vh;
   color: white;
   text-align: center;
@@ -498,6 +520,11 @@ body main .happy .hright {
           justify-content: center;
 }
 
+body main .happy .hright img {
+  height: 200px;
+  width: 200px;
+}
+
 body main .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,15 +567,6 @@ body main .contact .socials {
       -ms-flex-align: center;
           align-items: center;
   background-color: #111111;
-}
-
-body main .contact .socials .soc {
-  background-color: white;
-}
-
-body main .contact .socials img {
-  height: 100px;
-  width: 100px;
 }
 
 body footer {
@@ -618,12 +636,37 @@ body svg {
   pointer-events: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
   body header .mySlides h1 {
     font-size: 1em;
   }
-  body header .sticky {
+  body header .sticky .menu ul {
     display: none;
+  }
+  body header .sticky h1 {
+    text-align: left;
+  }
+  body header .sticky .icon {
+    display: block;
+    right: 0;
+    top: 0;
+  }
+  body header .stickyresponsive {
+    background-color: brown;
+  }
+  body header .stickyresponsive .icon {
+    display: block;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 2em;
+  }
+  body header .stickyresponsive .menu {
+    float: none;
+    display: block;
+  }
+  body header .stickyresponsive .menu ul {
+    display: block;
   }
   body header .maki .start button {
     height: 20px;

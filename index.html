@@ -48,6 +48,8 @@
     <header>
         <div class="incase" id="home">
             <nav class="sticky" id="navbar"> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars">ss</i>    </a>
             
                 
                 <div class="menu">
@@ -58,6 +60,9 @@
                         <li><a href="#projects">projects</a></li>
                         <li><a href="#about">about</a></li>
                         <li><a href="#contact">combat</a></li>
+                       
+                        
+                        
                         
                         
                     </ul>
@@ -254,7 +259,17 @@
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
         }
-        </script>    
+        </script>  
+        <script>
+            function myFunction() {
+              var x = document.getElementById("navbar");
+              if (x.className === "sticky") {
+                x.className += "responsive";
+              } else {
+                x.className = "sticky";
+              }
+            }
+            </script>  
     
 </body>
 </html>
