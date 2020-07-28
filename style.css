@@ -35,9 +35,34 @@ body header .stickyresponsive {
 
 body header .stickyresponsive .icon {
   display: none;
-  color: white;
-  text-decoration: none;
-  font-size: 2em;
+}
+
+body header .stickyresponsive .toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+body header .stickyresponsive .bar1, body header .stickyresponsive .bar2, body header .stickyresponsive .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body header .stickyresponsive .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+body header .stickyresponsive .change .bar2 {
+  opacity: 0;
+}
+
+body header .stickyresponsive .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 body header .sticky {
@@ -57,6 +82,34 @@ body header .sticky .icon {
   color: white;
   text-decoration: none;
   font-size: 2em;
+}
+
+body header .sticky .toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+body header .sticky .bar1, body header .sticky .bar2, body header .sticky .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body header .sticky .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+body header .sticky .change .bar2 {
+  opacity: 0;
+}
+
+body header .sticky .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 body header .carusel {
@@ -647,23 +700,29 @@ body svg {
     text-align: left;
   }
   body header .sticky .icon {
-    display: block;
     right: 0;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+  }
+  body header .sticky a {
+    right: 0;
   }
   body header .stickyresponsive {
     background-color: brown;
   }
+  body header .stickyresponsive .a {
+    right: 0;
+  }
   body header .stickyresponsive .icon {
     display: block;
+    float: right;
     right: 0;
     top: 0;
     color: white;
     font-size: 2em;
-  }
-  body header .stickyresponsive .menu {
-    float: none;
-    display: block;
   }
   body header .stickyresponsive .menu ul {
     display: block;

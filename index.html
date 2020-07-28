@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="fontello/css/fontello.css"/>
     <link rel="stylesheet" href="fontello1/css/fontello.css"/>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         
@@ -48,9 +49,8 @@
     <header>
         <div class="incase" id="home">
             <nav class="sticky" id="navbar"> 
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars">ss</i>    </a>
-            
+               
+             
                 
                 <div class="menu">
                     <h1>MrPr</h1>
@@ -67,7 +67,21 @@
                         
                     </ul>
 
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <div class="toggle" onclick="myFunctioni(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+    
+                      </a>
+                   
                 </div>
+                
+               
+
+              
+
             </nav>    
         </div>
         <div class="maki">
@@ -260,7 +274,15 @@
           dots[slideIndex-1].className += " active";
         }
         </script>  
+
+        < <script>
+            function myFunctioni(x) {
+              x.classList.toggle("change");
+            }
+        </script>>
+        
         <script>
+            
             function myFunction() {
               var x = document.getElementById("navbar");
               if (x.className === "sticky") {
@@ -269,7 +291,10 @@
                 x.className = "sticky";
               }
             }
-            </script>  
+        </script>  
+       
+
+
     
 </body>
 </html>
