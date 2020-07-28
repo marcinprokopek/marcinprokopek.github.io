@@ -727,8 +727,9 @@ body
             {
                 display: flex;
                 width: 100%;
-                justify-content: flex-start;
-                height: 1%!important;
+                justify-content: center;
+                align-items: space-evenly;
+                height: 80vh;
                 
                 
                 
@@ -737,8 +738,8 @@ body
 
                 img
                 {
-                    width: 40px!important;
-                    height: 40px!important;
+                    width: 70px!important;
+                    height: 70px!important;
                 }
                
 
@@ -748,17 +749,19 @@ body
             {
                 font-size: 0.5em;
                 flex-direction: column;
-                height: 1%;
+                height: 30vh;
+                justify-content: center;
+                align-items: center;
                 
                 img
                 {
-                    height: 100px!important;
-                    width: 100%!important;
+                    height: 120px!important;
+                    width: 120%!important;
                 }
                 .left
                 {
                     width: 100%!important;
-                    h2{font-size: 1.5em;}
+                    h2{font-size: 2.5em;}
                     
                 }
 
@@ -771,8 +774,8 @@ body
                     h2{font-size: 1.5em;}
                     img
                     {
-                        height: 90px!important;
-                        width: 90px!important;
+                        height: 110px!important;
+                        width: 110px!important;
                     }
                 }
 
@@ -782,10 +785,10 @@ body
                 display: flex;
                 flex-direction: column;
                 height: 1%;
-                font-size: 1.5em;
+                font-size: 1em;
                 
                 width: 100%;
-                font-size: 0.5em;
+                
                 padding: 0;
                 .navbut
                 {
@@ -802,7 +805,7 @@ body
               {
                   display: flex;
                   flex-direction: column;
-                  height: 1%!important;
+                  height: 100vh;
                   margin-top: 2%;
                   padding: 2%;
                   .what
@@ -813,7 +816,7 @@ body
 
                       .dicon
                       {
-                          font-size: 2em;
+                          font-size: 1.5em;
                       }
                       
                   }
@@ -835,8 +838,8 @@ body
                 }
                 img
                 {
-                    width: 200px;
-                    height: 200px;
+                    width: 100px;
+                    height: 100px;
 
                 }
             }

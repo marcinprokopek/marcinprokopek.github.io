@@ -738,18 +738,21 @@ body svg {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    height: 1% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-evenly;
+        -ms-flex-align: space-evenly;
+            align-items: space-evenly;
+    height: 80vh;
     font-size: 0.8em;
   }
   body main .tools h1 {
     font-size: 1em;
   }
   body main .tools img {
-    width: 40px !important;
-    height: 40px !important;
+    width: 70px !important;
+    height: 70px !important;
   }
   body main .use {
     font-size: 0.5em;
@@ -757,17 +760,23 @@ body svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 1%;
+    height: 30vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main .use img {
-    height: 100px !important;
-    width: 100% !important;
+    height: 120px !important;
+    width: 120% !important;
   }
   body main .use .left {
     width: 100% !important;
   }
   body main .use .left h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   body main .use .b {
     width: 100% !important;
@@ -780,8 +789,8 @@ body svg {
     font-size: 1.5em;
   }
   body main .use .b img {
-    height: 90px !important;
-    width: 90px !important;
+    height: 110px !important;
+    width: 110px !important;
   }
   body main .about {
     display: -webkit-box;
@@ -792,9 +801,8 @@ body svg {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 1%;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 100%;
-    font-size: 0.5em;
     padding: 0;
   }
   body main .about .navbut button {
@@ -809,7 +817,7 @@ body svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 1% !important;
+    height: 100vh;
     margin-top: 2%;
     padding: 2%;
   }
@@ -818,7 +826,7 @@ body svg {
     font-size: 0.4em;
   }
   body main .projects .what .dicon {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   body main .happy {
     display: -webkit-box;
@@ -842,8 +850,8 @@ body svg {
     width: 100% !important;
   }
   body main .happy img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   body main .contact {
     font-size: 0.5em;
